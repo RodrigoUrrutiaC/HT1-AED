@@ -13,11 +13,24 @@ import java.text.DecimalFormat;
 public class Radio implements RadioInterfaz{
     
     DecimalFormat df = new DecimalFormat("##.#");
+    	public boolean estado;
+	public String frecActual;
+	public String frecuencia;
+	
     
-    public Radio(){
-           
-        
-    }
+    public Radio (){
+		
+		estado = false;
+		frecActual = "88.1";
+		frecuencia = "FM";
+		
+	}
+	
+	public Radio(boolean estado, String frecuencia, String frecActual) {
+		this.estado = estado;
+		this.frecuencia = frecuencia;
+		this.frecActual = frecActual;
+	}
     
     @Override
     public String frecAdelante() {
