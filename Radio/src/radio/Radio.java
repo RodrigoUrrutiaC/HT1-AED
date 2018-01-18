@@ -12,20 +12,18 @@ import java.text.DecimalFormat;
 
 //CONSTRUCTOR
 
-public class Radio implements RadioInterfaz{
+public class Radio implements RadioI{
     
     DecimalFormat df = new DecimalFormat("##.#");
-    	public boolean estado;
-	public String frecActual;
-	public String frecuencia;
-	
+    boolean estado;
+    String frecActual;
+    String frecuencia;
+    String[] estaciones = new String[11];
     
     public Radio (){
-		
 		estado = false;
-		frecActual = "88.1";
-		frecuencia = "FM";
-		
+		frecActual = "87.9";
+		frecuencia = "FM";	
 	}
 	
 	public Radio(boolean estado, String frecuencia, String frecActual) {
@@ -37,143 +35,126 @@ public class Radio implements RadioInterfaz{
 //METODOS        
         
     @Override
-public String frecAdelante() {
-		
-		double emisora  = Double.parseDouble(frecActual);
-		
-		if (frecuencia.equals("FM")){
-			
-			if (emisora > 107.8 ) {
-				
-			}
-			
-			if (emisora < 107.8) {
-				emisora = emisora + 0.1;
-			}
-		}
-		
-		if (frecuencia.equals("AM")){
-			
-			if (emisora > 1600) {
-				
-			}
-			
-			if (emisora > 560) {
-				emisora = emisora + 10;
-			}	
-		}
-		
-		String frecActual = String.valueOf(emisora);
-		
-		return frecActual;
-	}
+    public String frecAdelante() {
+        if (frecuencia.equals("FM")){
+            double emisora  = Double.parseDouble(frecActual);
+            if (emisora < 107.9 ) {  
+                frecActual = df.format(emisora + 0.2);
+            }
+            else {
+                frecActual = "87.9";
+            }
+        }
+        if (frecuencia.equals("AM")){
+            int emisora  = Integer.parseInt(frecActual);
+            if (emisora < 1610) {
+                    frecActual = Integer.toString(emisora + 10);
+            }
+            else {
+                    frecActual = "530";
+            }
+        }
+        return frecActual;
+    }
 
     @Override
     public String frecAtras() {
-		
-		double emisora  = Double.parseDouble(frecActual);
-		
-		if (frecuencia.equals("FM")){
-			
-			if (emisora > 107.8 ) {
-				
-			}
-			
-			if (emisora < 107.8) {
-				emisora = emisora - 0.1;
-			}
-		}
-		
-		if (frecuencia.equals("AM")){
-			
-			if (emisora > 1600) {
-				
-			}
-			
-			if (emisora > 560) {
-				emisora = emisora - 10;
-			}	
-		}
-		
-		String frecActual = String.valueOf(emisora);
-		
-		return frecActual;
-	}
+        if (frecuencia.equals("FM")){
+            double emisora  = Double.parseDouble(frecActual);
+            if (emisora < 107.9 ) {  
+                frecActual = df.format(emisora + 0.2);
+            }
+            else {
+                frecActual = "87.9";
+            }
+        }
+        if (frecuencia.equals("AM")){
+            int emisora  = Integer.parseInt(frecActual);
+            if (emisora < 1610) {
+                    frecActual = Integer.toString(emisora + 10);
+            }
+            else {
+                    frecActual = "530";
+            }
+        }
+        return frecActual;
+    }
 
     @Override
     public boolean prender() {
-		
-		boolean estado = true;
-		
-		return estado;
-	}
+        estado = true;
+        return estado;
+    }
     
 
     @Override
-   public boolean apagar() {
-		
-		boolean estado = false;
-		
-		return estado;
-	}
+    public boolean apagar() {
+	estado = false;
+        return estado;
+    }
 
     @Override
     public String cambioFrecuencia() {
-		
-		if (frecuencia.equals("FM")){
-			frecuencia = "AM";
-		}
-		
-		if (frecuencia.equals("AM")){
-			frecuencia = "FM";	
-		
-		}
-		
-		return frecuencia;
-	}
+        if (frecuencia.equals("FM")){
+                frecuencia = "AM";
+        }
+        if (frecuencia.equals("AM")){
+                frecuencia = "FM";	
+        }
+        return frecuencia;
+    }
 
     @Override
-   public String mostrarEstacion() {
-		
-		String estacion = getFrecActual();
-		
-		return estacion;
-	}
-
-    @Override
-    public void guardarFrecAM(int frec, int pos) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void guardarEstacionActual(int pos) {
+        estaciones[pos-1] = frecActual;
     }
     
      @Override
-    public void guardarFrecFM(float frec, int pos) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String obtenerEstacion(int pos) {
+        String station=estaciones[pos-1];
+        return station;
     }
     
-    //SETS Y GETS
+    @Override
+    public String mostrarEstacion() {
+	return frecActual;
+    }
+
+    @Override
+    public boolean estaPrendido() {
+	return estado;
+    }
     
+    @Override
+    public String obtenerEstado() {
+	return frecuencia;
+    }
+
+    
+    //SETS Y GETS
+    /**
     public boolean getEstado() {
 		return estado;
 	}
 
-	public void setEstado(boolean estado) {
+    public void setEstado(boolean estado) {
 		this.estado = estado;
 	}
 
-	public String getFrecActual() {
+    public String getFrecActual() {
 		return frecActual;
 	}
 
-	public void setFrecActual(String frecActual) {
+    public void setFrecActual(String frecActual) {
 		this.frecActual = frecActual;
 	}
 
-	public String getFrecuencia() {
+    public String getFrecuencia() {
 		return frecuencia;
 	}
 
-	public void setFrecuencia(String frecuencia) {
+    public void setFrecuencia(String frecuencia) {
 		this.frecuencia = frecuencia;
 	}
-    
+     */
 }

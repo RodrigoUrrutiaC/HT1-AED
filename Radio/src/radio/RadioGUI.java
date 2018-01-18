@@ -12,6 +12,8 @@ public class RadioGUI extends javax.swing.JFrame {
     /**
      * Creates new form RadioGUI
      */
+    private Radio r = new Radio();
+    
     public RadioGUI() {
         initComponents();
     }
@@ -26,18 +28,18 @@ public class RadioGUI extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        estacion1Btt = new javax.swing.JButton();
+        estacion2Btt = new javax.swing.JButton();
+        estacion3Btt = new javax.swing.JButton();
+        estacion4Btt = new javax.swing.JButton();
+        estacion5Btt = new javax.swing.JButton();
+        estacion6Btt = new javax.swing.JButton();
+        estacion7Btt = new javax.swing.JButton();
+        estacion8Btt = new javax.swing.JButton();
+        estacion9Btt = new javax.swing.JButton();
+        estacion10Btt = new javax.swing.JButton();
+        estacion11Btt = new javax.swing.JButton();
+        estacion12Btt = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         ApagarButton = new javax.swing.JButton();
@@ -49,99 +51,99 @@ public class RadioGUI extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 255));
 
-        jButton1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton1.setText("1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        estacion1Btt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        estacion1Btt.setText("1");
+        estacion1Btt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                estacion1BttActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton2.setText("2");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        estacion2Btt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        estacion2Btt.setText("2");
+        estacion2Btt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                estacion2BttActionPerformed(evt);
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton4.setText("4");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        estacion3Btt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        estacion3Btt.setText("3");
+        estacion3Btt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                estacion3BttActionPerformed(evt);
             }
         });
 
-        jButton5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton5.setText("5");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        estacion4Btt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        estacion4Btt.setText("4");
+        estacion4Btt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                estacion4BttActionPerformed(evt);
             }
         });
 
-        jButton6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton6.setText("6");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        estacion5Btt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        estacion5Btt.setText("5");
+        estacion5Btt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                estacion5BttActionPerformed(evt);
             }
         });
 
-        jButton7.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton7.setText("7");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        estacion6Btt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        estacion6Btt.setText("6");
+        estacion6Btt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                estacion6BttActionPerformed(evt);
             }
         });
 
-        jButton8.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton8.setText("8");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        estacion7Btt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        estacion7Btt.setText("7");
+        estacion7Btt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                estacion7BttActionPerformed(evt);
             }
         });
 
-        jButton9.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton9.setText("9");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        estacion8Btt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        estacion8Btt.setText("8");
+        estacion8Btt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                estacion8BttActionPerformed(evt);
             }
         });
 
-        jButton10.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton10.setText("10");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        estacion9Btt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        estacion9Btt.setText("9");
+        estacion9Btt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                estacion9BttActionPerformed(evt);
             }
         });
 
-        jButton11.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton11.setText("11");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        estacion10Btt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        estacion10Btt.setText("10");
+        estacion10Btt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                estacion10BttActionPerformed(evt);
             }
         });
 
-        jButton12.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton12.setText("12");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        estacion11Btt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        estacion11Btt.setText("11");
+        estacion11Btt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                estacion11BttActionPerformed(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton3.setText("3");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        estacion12Btt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        estacion12Btt.setText("12");
+        estacion12Btt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                estacion12BttActionPerformed(evt);
             }
         });
 
@@ -155,24 +157,24 @@ public class RadioGUI extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(estacion1Btt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(estacion4Btt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(estacion10Btt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(estacion7Btt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(estacion5Btt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(estacion2Btt, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(estacion11Btt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(estacion8Btt, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton12))
+                    .addComponent(estacion6Btt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(estacion3Btt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(estacion9Btt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(estacion12Btt))
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(55, 55, 55)
@@ -186,24 +188,24 @@ public class RadioGUI extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
+                    .addComponent(estacion1Btt)
+                    .addComponent(estacion2Btt)
+                    .addComponent(estacion3Btt))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4)
-                    .addComponent(jButton5)
-                    .addComponent(jButton6))
+                    .addComponent(estacion4Btt)
+                    .addComponent(estacion5Btt)
+                    .addComponent(estacion6Btt))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton7)
-                    .addComponent(jButton8)
-                    .addComponent(jButton9))
+                    .addComponent(estacion7Btt)
+                    .addComponent(estacion8Btt)
+                    .addComponent(estacion9Btt))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton10)
-                    .addComponent(jButton11)
-                    .addComponent(jButton12))
+                    .addComponent(estacion10Btt)
+                    .addComponent(estacion11Btt)
+                    .addComponent(estacion12Btt))
                 .addContainerGap())
         );
 
@@ -287,56 +289,56 @@ public class RadioGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
   
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void estacion3BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion3BttActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_estacion3BttActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void estacion1BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion1BttActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_estacion1BttActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void estacion2BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion2BttActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_estacion2BttActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void estacion4BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion4BttActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_estacion4BttActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void estacion5BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion5BttActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_estacion5BttActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void estacion6BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion6BttActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_estacion6BttActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void estacion7BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion7BttActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_estacion7BttActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void estacion8BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion8BttActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_estacion8BttActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void estacion9BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion9BttActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_estacion9BttActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void estacion10BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion10BttActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_estacion10BttActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void estacion11BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion11BttActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_estacion11BttActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void estacion12BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion12BttActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_estacion12BttActionPerformed
 
     private void EncenderButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EncenderButtonActionPerformed
-        // TODO add your handling code here:
+        r.prender();
     }//GEN-LAST:event_EncenderButtonActionPerformed
 
     private void ApagarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ApagarButtonActionPerformed
@@ -401,18 +403,18 @@ public class RadioGUI extends javax.swing.JFrame {
     private javax.swing.JButton BajarButton;
     private javax.swing.JButton EncenderButton;
     private javax.swing.JButton SubirButton;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton estacion10Btt;
+    private javax.swing.JButton estacion11Btt;
+    private javax.swing.JButton estacion12Btt;
+    private javax.swing.JButton estacion1Btt;
+    private javax.swing.JButton estacion2Btt;
+    private javax.swing.JButton estacion3Btt;
+    private javax.swing.JButton estacion4Btt;
+    private javax.swing.JButton estacion5Btt;
+    private javax.swing.JButton estacion6Btt;
+    private javax.swing.JButton estacion7Btt;
+    private javax.swing.JButton estacion8Btt;
+    private javax.swing.JButton estacion9Btt;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
