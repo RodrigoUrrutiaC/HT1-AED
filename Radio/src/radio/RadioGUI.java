@@ -16,6 +16,7 @@ public class RadioGUI extends javax.swing.JFrame {
     
     public RadioGUI() {
         initComponents();
+        Off();
     }
 
     /**
@@ -42,10 +43,14 @@ public class RadioGUI extends javax.swing.JFrame {
         estacion12Btt = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        ApagarButton = new javax.swing.JButton();
-        BajarButton = new javax.swing.JButton();
-        SubirButton = new javax.swing.JButton();
-        EncenderButton = new javax.swing.JButton();
+        apagarBtt = new javax.swing.JButton();
+        atrasBtt = new javax.swing.JButton();
+        adelanteBtt = new javax.swing.JButton();
+        encenderBtt = new javax.swing.JButton();
+        frecuenciaLbl = new javax.swing.JLabel();
+        estacionLbl = new javax.swing.JLabel();
+        cambiarBtt = new javax.swing.JButton();
+        guardarBtt = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -176,17 +181,17 @@ public class RadioGUI extends javax.swing.JFrame {
                     .addComponent(estacion9Btt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(estacion12Btt))
                 .addContainerGap())
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(55, 55, 55)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(58, 58, 58))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(estacion1Btt)
                     .addComponent(estacion2Btt)
@@ -212,35 +217,57 @@ public class RadioGUI extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setText("RADIO");
 
-        ApagarButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        ApagarButton.setText("Apagar");
-        ApagarButton.addActionListener(new java.awt.event.ActionListener() {
+        apagarBtt.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        apagarBtt.setText("Apagar");
+        apagarBtt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ApagarButtonActionPerformed(evt);
+                apagarBttActionPerformed(evt);
             }
         });
 
-        BajarButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        BajarButton.setText("Reducir Frecuencia");
-        BajarButton.addActionListener(new java.awt.event.ActionListener() {
+        atrasBtt.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        atrasBtt.setText("-");
+        atrasBtt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BajarButtonActionPerformed(evt);
+                atrasBttActionPerformed(evt);
             }
         });
 
-        SubirButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        SubirButton.setText("Subir Frecuencia");
-        SubirButton.addActionListener(new java.awt.event.ActionListener() {
+        adelanteBtt.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        adelanteBtt.setText("+");
+        adelanteBtt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SubirButtonActionPerformed(evt);
+                adelanteBttActionPerformed(evt);
             }
         });
 
-        EncenderButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        EncenderButton.setText("Encender");
-        EncenderButton.addActionListener(new java.awt.event.ActionListener() {
+        encenderBtt.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        encenderBtt.setText("Encender");
+        encenderBtt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EncenderButtonActionPerformed(evt);
+                encenderBttActionPerformed(evt);
+            }
+        });
+
+        frecuenciaLbl.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        frecuenciaLbl.setText("FM");
+
+        estacionLbl.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        estacionLbl.setText("87.9");
+
+        cambiarBtt.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        cambiarBtt.setText("Cambiar frecuencia (FM/AM)");
+        cambiarBtt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cambiarBttActionPerformed(evt);
+            }
+        });
+
+        guardarBtt.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        guardarBtt.setText("Guardar frecuencia");
+        guardarBtt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                guardarBttActionPerformed(evt);
             }
         });
 
@@ -249,39 +276,66 @@ public class RadioGUI extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(153, 153, 153)
-                        .addComponent(jLabel1))
+                        .addComponent(encenderBtt, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(23, 23, 23)
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(apagarBtt, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(43, 43, 43)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(BajarButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ApagarButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(SubirButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(EncenderButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(46, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(16, 16, 16)
+                                        .addComponent(adelanteBtt)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(atrasBtt, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(frecuenciaLbl)
+                                        .addGap(36, 36, 36)
+                                        .addComponent(estacionLbl)))
+                                .addGap(63, 63, 63))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(0, 2, Short.MAX_VALUE)
+                                        .addComponent(cambiarBtt, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addComponent(guardarBtt, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 0, Short.MAX_VALUE)))))))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addGap(5, 5, 5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(encenderBtt)
+                    .addComponent(apagarBtt))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(EncenderButton)
-                        .addGap(5, 5, 5)
-                        .addComponent(ApagarButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(SubirButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(BajarButton)
-                        .addGap(20, 20, 20))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(19, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(estacionLbl)
+                            .addComponent(frecuenciaLbl))
+                        .addGap(28, 28, 28)
+                        .addComponent(cambiarBtt)
+                        .addGap(18, 18, 18)
+                        .addComponent(guardarBtt)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(adelanteBtt)
+                            .addComponent(atrasBtt))
                         .addGap(29, 29, 29))))
         );
 
@@ -337,23 +391,73 @@ public class RadioGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_estacion12BttActionPerformed
 
-    private void EncenderButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EncenderButtonActionPerformed
+    private void encenderBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_encenderBttActionPerformed
         r.prender();
-    }//GEN-LAST:event_EncenderButtonActionPerformed
+        On();
+    }//GEN-LAST:event_encenderBttActionPerformed
 
-    private void ApagarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ApagarButtonActionPerformed
+    private void apagarBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_apagarBttActionPerformed
+        r.apagar();
+        Off();
+    }//GEN-LAST:event_apagarBttActionPerformed
+
+    private void adelanteBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adelanteBttActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ApagarButtonActionPerformed
+    }//GEN-LAST:event_adelanteBttActionPerformed
 
-    private void SubirButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubirButtonActionPerformed
+    private void atrasBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasBttActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SubirButtonActionPerformed
+    }//GEN-LAST:event_atrasBttActionPerformed
 
-    private void BajarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BajarButtonActionPerformed
+    private void cambiarBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cambiarBttActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_BajarButtonActionPerformed
+    }//GEN-LAST:event_cambiarBttActionPerformed
 
+    private void guardarBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBttActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_guardarBttActionPerformed
+
+    private void On(){
+        estacionLbl.setVisible(true);
+        frecuenciaLbl.setVisible(true);
+        estacion1Btt.setVisible(true);
+        estacion2Btt.setVisible(true);
+        estacion3Btt.setVisible(true);
+        estacion4Btt.setVisible(true);
+        estacion5Btt.setVisible(true);
+        estacion6Btt.setVisible(true);
+        estacion7Btt.setVisible(true);
+        estacion8Btt.setVisible(true);
+        estacion9Btt.setVisible(true);
+        estacion10Btt.setVisible(true);
+        estacion11Btt.setVisible(true);
+        estacion12Btt.setVisible(true);
+        adelanteBtt.setVisible(true);
+        atrasBtt.setVisible(true);
+        cambiarBtt.setVisible(true);
+        guardarBtt.setVisible(true);
+    }
     
+    private void Off(){
+        estacionLbl.setVisible(false);
+        frecuenciaLbl.setVisible(false);
+        estacion1Btt.setVisible(false);
+        estacion2Btt.setVisible(false);
+        estacion3Btt.setVisible(false);
+        estacion4Btt.setVisible(false);
+        estacion5Btt.setVisible(false);
+        estacion6Btt.setVisible(false);
+        estacion7Btt.setVisible(false);
+        estacion8Btt.setVisible(false);
+        estacion9Btt.setVisible(false);
+        estacion10Btt.setVisible(false);
+        estacion11Btt.setVisible(false);
+        estacion12Btt.setVisible(false);
+        adelanteBtt.setVisible(false);
+        atrasBtt.setVisible(false);
+        cambiarBtt.setVisible(false);
+        guardarBtt.setVisible(false);
+    }
     
     
     
@@ -399,10 +503,11 @@ public class RadioGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ApagarButton;
-    private javax.swing.JButton BajarButton;
-    private javax.swing.JButton EncenderButton;
-    private javax.swing.JButton SubirButton;
+    private javax.swing.JButton adelanteBtt;
+    private javax.swing.JButton apagarBtt;
+    private javax.swing.JButton atrasBtt;
+    private javax.swing.JButton cambiarBtt;
+    private javax.swing.JButton encenderBtt;
     private javax.swing.JButton estacion10Btt;
     private javax.swing.JButton estacion11Btt;
     private javax.swing.JButton estacion12Btt;
@@ -415,6 +520,9 @@ public class RadioGUI extends javax.swing.JFrame {
     private javax.swing.JButton estacion7Btt;
     private javax.swing.JButton estacion8Btt;
     private javax.swing.JButton estacion9Btt;
+    private javax.swing.JLabel estacionLbl;
+    private javax.swing.JLabel frecuenciaLbl;
+    private javax.swing.JButton guardarBtt;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
