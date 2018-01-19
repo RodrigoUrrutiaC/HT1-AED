@@ -350,207 +350,135 @@ public class RadioGUI extends javax.swing.JFrame {
   
     
     private void estacion3BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion3BttActionPerformed
-        
-        if (validar == true){
-            
-            r.guardarEstacionActual(Integer.parseInt(estacion));
+        if (validar == true){       
+            r.guardarEstacionActual(3);
             validar = false;
-
-        }
-        
-        if (validar == false){
-            
-            r.obtenerEstacion(3);
-            
-        }
-        
+        }    
+        if (validar == false){         
+            estacionLbl.setText(r.obtenerEstacion(3));  
+            frecuenciaLbl.setText(r.obtenerEstado());
+        }    
     }//GEN-LAST:event_estacion3BttActionPerformed
 
     private void estacion1BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion1BttActionPerformed
-        
-        if (validar == true){
-            
-            r.guardarEstacionActual(Integer.parseInt(estacion));
+        if (validar == true){       
+            r.guardarEstacionActual(1);
             validar = false;
-
-        }
-        
-        if (validar == false){
-            
-            r.obtenerEstacion(1);
-            
-        }
-        
+        }    
+        if (validar == false){         
+            estacionLbl.setText(r.obtenerEstacion(1));  
+            frecuenciaLbl.setText(r.obtenerEstado());
+        }     
     }//GEN-LAST:event_estacion1BttActionPerformed
 
     private void estacion2BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion2BttActionPerformed
-        
-        if (validar == true){
-            
-            r.guardarEstacionActual(Integer.parseInt(estacion));
+        if (validar == true){       
+            r.guardarEstacionActual(2);
             validar = false;
-
-        }
-        
-        if (validar == false){
-            
-            r.obtenerEstacion(2);
-            
-        }
-        
+        }    
+        if (validar == false){         
+            estacionLbl.setText(r.obtenerEstacion(2));  
+            frecuenciaLbl.setText(r.obtenerEstado());
+        } 
     }//GEN-LAST:event_estacion2BttActionPerformed
 
     private void estacion4BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion4BttActionPerformed
-        
-        if (validar == true){
-            
-            r.guardarEstacionActual(Integer.parseInt(estacion));
+        if (validar == true){       
+            r.guardarEstacionActual(4);
             validar = false;
-
-        }
-        
-        if (validar == false){
-            
-            r.obtenerEstacion(4);
-            
-        }
-        
+        }    
+        if (validar == false){         
+            estacionLbl.setText(r.obtenerEstacion(4));  
+            frecuenciaLbl.setText(r.obtenerEstado());
+        }  
     }//GEN-LAST:event_estacion4BttActionPerformed
 
     private void estacion5BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion5BttActionPerformed
-        
-        if (validar == true){
-            
-            r.guardarEstacionActual(Integer.parseInt(estacion));
+        if (validar == true){       
+            r.guardarEstacionActual(5);
             validar = false;
-
-        }
-        
-        if (validar == false){
-            
-            r.obtenerEstacion(5);
-            
-        }
-        
+        }    
+        if (validar == false){         
+            estacionLbl.setText(r.obtenerEstacion(5));  
+            frecuenciaLbl.setText(r.obtenerEstado());
+        } 
     }//GEN-LAST:event_estacion5BttActionPerformed
 
     private void estacion6BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion6BttActionPerformed
-        
-        if (validar == true){
-            
-            r.guardarEstacionActual(Integer.parseInt(estacion));
+        if (validar == true){       
+            r.guardarEstacionActual(6);
             validar = false;
-
-        }
-        
-        if (validar == false){
-            
-            r.obtenerEstacion(6);
-            
-        }
-        
+        }    
+        if (validar == false){         
+            estacionLbl.setText(r.obtenerEstacion(6));  
+            frecuenciaLbl.setText(r.obtenerEstado());
+        }  
     }//GEN-LAST:event_estacion6BttActionPerformed
 
     private void estacion7BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion7BttActionPerformed
-        
-        if (validar == true){
-            
-            r.guardarEstacionActual(Integer.parseInt(estacion));
+        if (validar == true){       
+            r.guardarEstacionActual(7);
             validar = false;
-
-        }
-        
-        if (validar == false){
-            
-            r.obtenerEstacion(7);
-            
-        }
-        
+        }    
+        if (validar == false){         
+            estacionLbl.setText(r.obtenerEstacion(7));  
+            frecuenciaLbl.setText(r.obtenerEstado());
+        } 
     }//GEN-LAST:event_estacion7BttActionPerformed
 
     private void estacion8BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion8BttActionPerformed
-        
-        if (validar == true){
-            
-            r.guardarEstacionActual(Integer.parseInt(estacion));
+        if (validar == true){       
+            r.guardarEstacionActual(8);
             validar = false;
-
-        }
-        
-        if (validar == false){
-            
-            r.obtenerEstacion(8);
-            
-        }
-        
+        }    
+        if (validar == false){         
+            estacionLbl.setText(r.obtenerEstacion(8));  
+            frecuenciaLbl.setText(r.obtenerEstado());
+        } 
     }//GEN-LAST:event_estacion8BttActionPerformed
 
     private void estacion9BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion9BttActionPerformed
-        
-        if (validar == true){
-            
-            r.guardarEstacionActual(Integer.parseInt(estacion));
+        if (validar == true){       
+            r.guardarEstacionActual(9);
             validar = false;
-
-        }
-        
-        if (validar == false){
-            
-            r.obtenerEstacion(9);
-            
-        }
-        
+        }    
+        if (validar == false){         
+            estacionLbl.setText(r.obtenerEstacion(9));  
+            frecuenciaLbl.setText(r.obtenerEstado());
+        }  
     }//GEN-LAST:event_estacion9BttActionPerformed
 
     private void estacion10BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion10BttActionPerformed
-        
-        if (validar == true){
-            
-            r.guardarEstacionActual(Integer.parseInt(estacion));
+        if (validar == true){       
+            r.guardarEstacionActual(10);
             validar = false;
-
-        }
-        
-        if (validar == false){
-            
-            r.obtenerEstacion(10);
-            
-        }
-        
+        }    
+        if (validar == false){         
+            estacionLbl.setText(r.obtenerEstacion(10));  
+            frecuenciaLbl.setText(r.obtenerEstado());
+        } 
     }//GEN-LAST:event_estacion10BttActionPerformed
 
     private void estacion11BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion11BttActionPerformed
-        
-        if (validar == true){
-            
-            r.guardarEstacionActual(Integer.parseInt(estacion));
+        if (validar == true){       
+            r.guardarEstacionActual(11);
             validar = false;
-
-        }
-        
-        if (validar == false){
-            
-            r.obtenerEstacion(11);
-            
-        }
-        
+        }    
+        if (validar == false){         
+            estacionLbl.setText(r.obtenerEstacion(11));  
+            frecuenciaLbl.setText(r.obtenerEstado());
+        } 
     }//GEN-LAST:event_estacion11BttActionPerformed
 
     private void estacion12BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion12BttActionPerformed
-        
-        if (validar == true){
-            
-            r.guardarEstacionActual(Integer.parseInt(estacion));
+        if (validar == true){       
+            r.guardarEstacionActual(12);
             validar = false;
-
-        }
-        
-        if (validar == false){
-            
-            r.obtenerEstacion(12);
-            
-        }
-        
+        }    
+        if (validar == false){         
+            estacionLbl.setText(r.obtenerEstacion(12));  
+            frecuenciaLbl.setText(r.obtenerEstado());
+        }   
     }//GEN-LAST:event_estacion12BttActionPerformed
 
     private void encenderBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_encenderBttActionPerformed
@@ -564,28 +492,23 @@ public class RadioGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_apagarBttActionPerformed
 
     private void adelanteBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adelanteBttActionPerformed
-
-       estacionLbl.setText(r.frecAdelante());
-        
+        estacionLbl.setText(r.frecAdelante());
+        estacion=r.mostrarEstacion();
     }//GEN-LAST:event_adelanteBttActionPerformed
 
     private void atrasBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasBttActionPerformed
-
-        estacionLbl.setText(r.frecAtras());
-        
+        estacionLbl.setText(r.frecAtras());   
+        estacion=r.mostrarEstacion();
     }//GEN-LAST:event_atrasBttActionPerformed
 
     private void cambiarBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cambiarBttActionPerformed
-
-        frecuenciaLbl.setText(r.cambioFrecuencia());
-        estacionLbl.setText(r.mostrarEstacion());
-        
+        r.cambioFrecuencia();
+        frecuenciaLbl.setText(r.obtenerEstado());
+        estacionLbl.setText(r.mostrarEstacion());        
     }//GEN-LAST:event_cambiarBttActionPerformed
 
     private void guardarBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBttActionPerformed
-        
-        validar = true;
-        
+        validar = true;        
     }//GEN-LAST:event_guardarBttActionPerformed
 
     private void On(){
@@ -629,15 +552,7 @@ public class RadioGUI extends javax.swing.JFrame {
         cambiarBtt.setVisible(false);
         guardarBtt.setVisible(false);
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+     
     /**
      * @param args the command line arguments
      */

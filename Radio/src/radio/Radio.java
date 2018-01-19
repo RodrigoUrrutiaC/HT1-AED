@@ -18,7 +18,8 @@ public class Radio implements RadioI{
     boolean estado;
     String frecActual;
     String frecuencia;
-    String[] estaciones = new String[11];
+    String[] estaciones = new String[12];
+    String[] estados = new String[12];
     
     public Radio (){
 		estado = false;
@@ -100,7 +101,7 @@ public class Radio implements RadioI{
                 frecuencia = "AM";
                 frecActual = "530";
         }
-        else{
+        else if (frecuencia.equals("AM")){
                 frecuencia = "FM";
                 frecActual = "87.9";
         }
@@ -110,11 +111,13 @@ public class Radio implements RadioI{
     @Override
     public void guardarEstacionActual(int pos) {
         estaciones[pos-1] = frecActual;
+        estados[pos-1] = frecuencia;
     }
     
      @Override
     public String obtenerEstacion(int pos) {
         String station=estaciones[pos-1];
+        frecuencia = estados[pos-1];
         return station;
     }
     
