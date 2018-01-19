@@ -530,6 +530,7 @@ public class RadioGUI extends javax.swing.JFrame {
         atrasBtt.setVisible(true);
         cambiarBtt.setVisible(true);
         guardarBtt.setVisible(true);
+        jPanel1.setVisible(true);
     }
     
     private void Off(){
@@ -551,6 +552,7 @@ public class RadioGUI extends javax.swing.JFrame {
         atrasBtt.setVisible(false);
         cambiarBtt.setVisible(false);
         guardarBtt.setVisible(false);
+        jPanel1.setVisible(false);
     }
      
     /**

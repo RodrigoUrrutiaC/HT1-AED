@@ -24,7 +24,10 @@ public class Radio implements RadioI{
     public Radio (){
 		estado = false;
 		frecActual = "87.9";
-		frecuencia = "FM";	
+		frecuencia = "FM";
+                estaciones = new String[] {"87.9","87.9","87.9","87.9","87.9","87.9","87.9","87.9","87.9","87.9","87.9","87.9"};
+                estados = new String[] {"FM","FM","FM","FM","FM","FM","FM","FM","FM","FM","FM","FM"};
+                        
 	}
 	
 	public Radio(boolean estado, String frecuencia, String frecActual) {
@@ -135,32 +138,4 @@ public class Radio implements RadioI{
     public String obtenerEstado() {
 	return frecuencia;
     }
-
-    
-    //SETS Y GETS
-    /**
-    public boolean getEstado() {
-		return estado;
-	}
-
-    public void setEstado(boolean estado) {
-		this.estado = estado;
-	}
-
-    public String getFrecActual() {
-		return frecActual;
-	}
-
-    public void setFrecActual(String frecActual) {
-		this.frecActual = frecActual;
-	}
-
-    public String getFrecuencia() {
-		return frecuencia;
-	}
-
-    public void setFrecuencia(String frecuencia) {
-		this.frecuencia = frecuencia;
-	}
-     */
 }
