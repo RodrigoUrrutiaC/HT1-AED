@@ -565,19 +565,20 @@ public class RadioGUI extends javax.swing.JFrame {
 
     private void adelanteBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adelanteBttActionPerformed
 
-        r.frecAdelante();
+       estacionLbl.setText(r.frecAdelante());
         
     }//GEN-LAST:event_adelanteBttActionPerformed
 
     private void atrasBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasBttActionPerformed
 
-        r.frecAtras();
+        estacionLbl.setText(r.frecAtras());
         
     }//GEN-LAST:event_atrasBttActionPerformed
 
     private void cambiarBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cambiarBttActionPerformed
 
-        r.cambioFrecuencia();
+        frecuenciaLbl.setText(r.cambioFrecuencia());
+        estacionLbl.setText(r.mostrarEstacion());
         
     }//GEN-LAST:event_cambiarBttActionPerformed
 

@@ -61,20 +61,21 @@ public class Radio implements RadioI{
     public String frecAtras() {
         if (frecuencia.equals("FM")){
             double emisora  = Double.parseDouble(frecActual);
-            if (emisora < 107.9 ) {  
-                frecActual = df.format(emisora + 0.2);
+            if (emisora > 87.9 ) {  
+                frecActual = df.format(emisora - 0.2);
             }
-            else {
-                frecActual = "87.9";
+            
+            else{
+                frecActual = "107.9";
             }
         }
         if (frecuencia.equals("AM")){
             int emisora  = Integer.parseInt(frecActual);
-            if (emisora < 1610) {
-                    frecActual = Integer.toString(emisora + 10);
+            if (emisora > 530) {
+                    frecActual = Integer.toString(emisora - 10);
             }
             else {
-                    frecActual = "530";
+                    frecActual = "1610";
             }
         }
         return frecActual;
@@ -97,9 +98,11 @@ public class Radio implements RadioI{
     public String cambioFrecuencia() {
         if (frecuencia.equals("FM")){
                 frecuencia = "AM";
+                frecActual = "530";
         }
-        if (frecuencia.equals("AM")){
-                frecuencia = "FM";	
+        else{
+                frecuencia = "FM";
+                frecActual = "87.9";
         }
         return frecuencia;
     }
