@@ -14,6 +14,11 @@ public class RadioGUI extends javax.swing.JFrame {
      */
     private Radio r = new Radio();
     
+    
+    boolean validar = false;
+    String estacion = r.mostrarEstacion();
+    
+    
     public RadioGUI() {
         initComponents();
         Off();
@@ -343,52 +348,209 @@ public class RadioGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
   
+    
     private void estacion3BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion3BttActionPerformed
-        // TODO add your handling code here:
+        
+        if (validar == true){
+            
+            r.guardarEstacionActual(Integer.parseInt(estacion));
+            validar = false;
+
+        }
+        
+        if (validar == false){
+            
+            r.obtenerEstacion(3);
+            
+        }
+        
     }//GEN-LAST:event_estacion3BttActionPerformed
 
     private void estacion1BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion1BttActionPerformed
-        // TODO add your handling code here:
+        
+        if (validar == true){
+            
+            r.guardarEstacionActual(Integer.parseInt(estacion));
+            validar = false;
+
+        }
+        
+        if (validar == false){
+            
+            r.obtenerEstacion(1);
+            
+        }
+        
     }//GEN-LAST:event_estacion1BttActionPerformed
 
     private void estacion2BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion2BttActionPerformed
-        // TODO add your handling code here:
+        
+        if (validar == true){
+            
+            r.guardarEstacionActual(Integer.parseInt(estacion));
+            validar = false;
+
+        }
+        
+        if (validar == false){
+            
+            r.obtenerEstacion(2);
+            
+        }
+        
     }//GEN-LAST:event_estacion2BttActionPerformed
 
     private void estacion4BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion4BttActionPerformed
-        // TODO add your handling code here:
+        
+        if (validar == true){
+            
+            r.guardarEstacionActual(Integer.parseInt(estacion));
+            validar = false;
+
+        }
+        
+        if (validar == false){
+            
+            r.obtenerEstacion(4);
+            
+        }
+        
     }//GEN-LAST:event_estacion4BttActionPerformed
 
     private void estacion5BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion5BttActionPerformed
-        // TODO add your handling code here:
+        
+        if (validar == true){
+            
+            r.guardarEstacionActual(Integer.parseInt(estacion));
+            validar = false;
+
+        }
+        
+        if (validar == false){
+            
+            r.obtenerEstacion(5);
+            
+        }
+        
     }//GEN-LAST:event_estacion5BttActionPerformed
 
     private void estacion6BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion6BttActionPerformed
-        // TODO add your handling code here:
+        
+        if (validar == true){
+            
+            r.guardarEstacionActual(Integer.parseInt(estacion));
+            validar = false;
+
+        }
+        
+        if (validar == false){
+            
+            r.obtenerEstacion(6);
+            
+        }
+        
     }//GEN-LAST:event_estacion6BttActionPerformed
 
     private void estacion7BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion7BttActionPerformed
-        // TODO add your handling code here:
+        
+        if (validar == true){
+            
+            r.guardarEstacionActual(Integer.parseInt(estacion));
+            validar = false;
+
+        }
+        
+        if (validar == false){
+            
+            r.obtenerEstacion(7);
+            
+        }
+        
     }//GEN-LAST:event_estacion7BttActionPerformed
 
     private void estacion8BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion8BttActionPerformed
-        // TODO add your handling code here:
+        
+        if (validar == true){
+            
+            r.guardarEstacionActual(Integer.parseInt(estacion));
+            validar = false;
+
+        }
+        
+        if (validar == false){
+            
+            r.obtenerEstacion(8);
+            
+        }
+        
     }//GEN-LAST:event_estacion8BttActionPerformed
 
     private void estacion9BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion9BttActionPerformed
-        // TODO add your handling code here:
+        
+        if (validar == true){
+            
+            r.guardarEstacionActual(Integer.parseInt(estacion));
+            validar = false;
+
+        }
+        
+        if (validar == false){
+            
+            r.obtenerEstacion(9);
+            
+        }
+        
     }//GEN-LAST:event_estacion9BttActionPerformed
 
     private void estacion10BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion10BttActionPerformed
-        // TODO add your handling code here:
+        
+        if (validar == true){
+            
+            r.guardarEstacionActual(Integer.parseInt(estacion));
+            validar = false;
+
+        }
+        
+        if (validar == false){
+            
+            r.obtenerEstacion(10);
+            
+        }
+        
     }//GEN-LAST:event_estacion10BttActionPerformed
 
     private void estacion11BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion11BttActionPerformed
-        // TODO add your handling code here:
+        
+        if (validar == true){
+            
+            r.guardarEstacionActual(Integer.parseInt(estacion));
+            validar = false;
+
+        }
+        
+        if (validar == false){
+            
+            r.obtenerEstacion(11);
+            
+        }
+        
     }//GEN-LAST:event_estacion11BttActionPerformed
 
     private void estacion12BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion12BttActionPerformed
-        // TODO add your handling code here:
+        
+        if (validar == true){
+            
+            r.guardarEstacionActual(Integer.parseInt(estacion));
+            validar = false;
+
+        }
+        
+        if (validar == false){
+            
+            r.obtenerEstacion(12);
+            
+        }
+        
     }//GEN-LAST:event_estacion12BttActionPerformed
 
     private void encenderBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_encenderBttActionPerformed
@@ -402,19 +564,27 @@ public class RadioGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_apagarBttActionPerformed
 
     private void adelanteBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adelanteBttActionPerformed
-        // TODO add your handling code here:
+
+        r.frecAdelante();
+        
     }//GEN-LAST:event_adelanteBttActionPerformed
 
     private void atrasBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasBttActionPerformed
-        // TODO add your handling code here:
+
+        r.frecAtras();
+        
     }//GEN-LAST:event_atrasBttActionPerformed
 
     private void cambiarBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cambiarBttActionPerformed
-        // TODO add your handling code here:
+
+        r.cambioFrecuencia();
+        
     }//GEN-LAST:event_cambiarBttActionPerformed
 
     private void guardarBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBttActionPerformed
-        // TODO add your handling code here:
+        
+        validar = true;
+        
     }//GEN-LAST:event_guardarBttActionPerformed
 
     private void On(){
