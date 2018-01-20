@@ -348,7 +348,10 @@ public class RadioGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
   
-    
+  /**
+     * listener de boton para guardar emisora de radio
+     * @param evt 
+     */  
     private void estacion3BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion3BttActionPerformed
         if (validar == true){       
             r.guardarEstacionActual(3);
@@ -359,7 +362,10 @@ public class RadioGUI extends javax.swing.JFrame {
             frecuenciaLbl.setText(r.obtenerEstado());
         }    
     }//GEN-LAST:event_estacion3BttActionPerformed
-
+/**
+     * listener de boton para guardar emisora de radio
+     * @param evt 
+     */
     private void estacion1BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion1BttActionPerformed
         if (validar == true){       
             r.guardarEstacionActual(1);
@@ -370,7 +376,10 @@ public class RadioGUI extends javax.swing.JFrame {
             frecuenciaLbl.setText(r.obtenerEstado());
         }     
     }//GEN-LAST:event_estacion1BttActionPerformed
-
+/**
+     * listener de boton para guardar emisora de radio
+     * @param evt 
+     */
     private void estacion2BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion2BttActionPerformed
         if (validar == true){       
             r.guardarEstacionActual(2);
@@ -381,7 +390,10 @@ public class RadioGUI extends javax.swing.JFrame {
             frecuenciaLbl.setText(r.obtenerEstado());
         } 
     }//GEN-LAST:event_estacion2BttActionPerformed
-
+/**
+     * listener de boton para guardar emisora de radio
+     * @param evt 
+     */
     private void estacion4BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion4BttActionPerformed
         if (validar == true){       
             r.guardarEstacionActual(4);
@@ -392,7 +404,10 @@ public class RadioGUI extends javax.swing.JFrame {
             frecuenciaLbl.setText(r.obtenerEstado());
         }  
     }//GEN-LAST:event_estacion4BttActionPerformed
-
+/**
+     * listener de boton para guardar emisora de radio
+     * @param evt 
+     */
     private void estacion5BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion5BttActionPerformed
         if (validar == true){       
             r.guardarEstacionActual(5);
@@ -403,7 +418,10 @@ public class RadioGUI extends javax.swing.JFrame {
             frecuenciaLbl.setText(r.obtenerEstado());
         } 
     }//GEN-LAST:event_estacion5BttActionPerformed
-
+/**
+     * listener de boton para guardar emisora de radio
+     * @param evt 
+     */
     private void estacion6BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion6BttActionPerformed
         if (validar == true){       
             r.guardarEstacionActual(6);
@@ -414,7 +432,10 @@ public class RadioGUI extends javax.swing.JFrame {
             frecuenciaLbl.setText(r.obtenerEstado());
         }  
     }//GEN-LAST:event_estacion6BttActionPerformed
-
+/**
+     * listener de boton para guardar emisora de radio
+     * @param evt 
+     */
     private void estacion7BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion7BttActionPerformed
         if (validar == true){       
             r.guardarEstacionActual(7);
@@ -425,7 +446,10 @@ public class RadioGUI extends javax.swing.JFrame {
             frecuenciaLbl.setText(r.obtenerEstado());
         } 
     }//GEN-LAST:event_estacion7BttActionPerformed
-
+/**
+     * listener de boton para guardar emisora de radio
+     * @param evt 
+     */
     private void estacion8BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion8BttActionPerformed
         if (validar == true){       
             r.guardarEstacionActual(8);
@@ -436,7 +460,10 @@ public class RadioGUI extends javax.swing.JFrame {
             frecuenciaLbl.setText(r.obtenerEstado());
         } 
     }//GEN-LAST:event_estacion8BttActionPerformed
-
+/**
+     * listener de boton para guardar emisora de radio
+     * @param evt 
+     */
     private void estacion9BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion9BttActionPerformed
         if (validar == true){       
             r.guardarEstacionActual(9);
@@ -447,7 +474,10 @@ public class RadioGUI extends javax.swing.JFrame {
             frecuenciaLbl.setText(r.obtenerEstado());
         }  
     }//GEN-LAST:event_estacion9BttActionPerformed
-
+/**
+     * listener de boton para guardar emisora de radio
+     * @param evt 
+     */
     private void estacion10BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion10BttActionPerformed
         if (validar == true){       
             r.guardarEstacionActual(10);
@@ -458,7 +488,10 @@ public class RadioGUI extends javax.swing.JFrame {
             frecuenciaLbl.setText(r.obtenerEstado());
         } 
     }//GEN-LAST:event_estacion10BttActionPerformed
-
+/**
+     * listener de boton para guardar emisora de radio
+     * @param evt 
+     */
     private void estacion11BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion11BttActionPerformed
         if (validar == true){       
             r.guardarEstacionActual(11);
@@ -469,7 +502,10 @@ public class RadioGUI extends javax.swing.JFrame {
             frecuenciaLbl.setText(r.obtenerEstado());
         } 
     }//GEN-LAST:event_estacion11BttActionPerformed
-
+   /**
+     * listener de boton para guardar emisora de radio
+     * @param evt 
+     */
     private void estacion12BttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacion12BttActionPerformed
         if (validar == true){       
             r.guardarEstacionActual(12);
@@ -480,37 +516,57 @@ public class RadioGUI extends javax.swing.JFrame {
             frecuenciaLbl.setText(r.obtenerEstado());
         }   
     }//GEN-LAST:event_estacion12BttActionPerformed
-
+/**
+ * lstener para boton para encender la radio
+ * @param evt 
+ */
     private void encenderBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_encenderBttActionPerformed
         r.prender();
         On();
     }//GEN-LAST:event_encenderBttActionPerformed
-
+/**
+ * lstener para boton para apagar la radio
+ * @param evt 
+ */
     private void apagarBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_apagarBttActionPerformed
         r.apagar();
         Off();
     }//GEN-LAST:event_apagarBttActionPerformed
-
+/**
+ * lstener para boton para pasar a radio siguiente
+ * @param evt 
+ */
     private void adelanteBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adelanteBttActionPerformed
         estacionLbl.setText(r.frecAdelante());
         estacion=r.mostrarEstacion();
     }//GEN-LAST:event_adelanteBttActionPerformed
-
+/**
+ * lstener para boton para retroceder a la radio anterior
+ * @param evt 
+ */
     private void atrasBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasBttActionPerformed
         estacionLbl.setText(r.frecAtras());   
         estacion=r.mostrarEstacion();
     }//GEN-LAST:event_atrasBttActionPerformed
-
+/**
+ * lstener para boton para cambiar a frecuencia FM o AM
+ * @param evt 
+ */
     private void cambiarBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cambiarBttActionPerformed
         r.cambioFrecuencia();
         frecuenciaLbl.setText(r.obtenerEstado());
         estacionLbl.setText(r.mostrarEstacion());        
     }//GEN-LAST:event_cambiarBttActionPerformed
-
+/**
+ * lstener para boton para activar el guardado de una emisora
+ * @param evt 
+ */
     private void guardarBttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBttActionPerformed
         validar = true;        
     }//GEN-LAST:event_guardarBttActionPerformed
-
+/**
+ * botones encendidos cuando la radio esta encendida
+ */
     private void On(){
         estacionLbl.setVisible(true);
         frecuenciaLbl.setVisible(true);
@@ -532,7 +588,9 @@ public class RadioGUI extends javax.swing.JFrame {
         guardarBtt.setVisible(true);
         jPanel1.setVisible(true);
     }
-    
+     /**
+     * botones apagados cuando la radio esta apagada
+     */
     private void Off(){
         estacionLbl.setVisible(false);
         frecuenciaLbl.setVisible(false);
